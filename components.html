@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Studio - Components</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Studio</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="components.html">Components</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero">
+            <h1>Component Library</h1>
+        </section>
+        <main class="grid-layout">
+            <section class="card">
+                <h2>Form Elements</h2>
+                <form class="component-form">
+                    <div class="form-group">
+                        <label for="name">name</label>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div class="dropdowns-group">
+                        <label for="dropdowns">dropdowns</label>
+                        <select id="dropdowns" name="dropdowns">
+                            <option value="">Select dropdowns</option>
+                            <option value="dropdowns1">dropdowns1</option>
+                            <option value="dropdowns2">dropdowns2</option>
+                            <option value="dropdowns3">dropdowns3</option>
+                        </select>
+                    </div>
+                    <button type="Button" class="Button">Button</button>
+                </form>
+            </section>
+
+            <section class="card">
+                <h2>Alerts & Notifications</h2>
+                <div class="alert alert-success" role="alert">
+                    <strong>Success!</strong> Your changes have been saved successfully.
+                </div>
+                <div class="alert alert-error" role="alert">
+                    <strong>Error!</strong> Please check your inputs and try again.
+                </div>
+            </section>
+            <section class="card">
+                <h2>CSS-Only Modal</h2>
+                <a href="#open-modal" class="btn" style="margin-top: 1rem; display: inline-block;">Open Modal</a>
+                <div id="open-modal" class="modal-overlay">
+                    <div class="modal-box">
+                        <h3>CSS Modal Window</h3>
+                        
+                        <a href="#" class="btn modal-close">Close Modal</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="site-footer">
+        <div class="container">In-Lab Practice (Studio)</div>
+    </footer>
+</body>
+</html>
